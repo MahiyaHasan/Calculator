@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_advanced_calculator">
+
+    <Button
+        android:id="@+id/sin_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="485dp"
+        android:text="SIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_et" />
+
+    <Button
+        android:id="@+id/cos_bt"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="485dp"
+        android:text="cos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_et" />
+
+    <Button
+        android:id="@+id/sqroot_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="329dp"
+        android:text="SQ root"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sin_bt" />
+
+    <Button
+        android:id="@+id/sq_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="329dp"
+        android:text="SQUARE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sqroot_bt"
+        app:layout_constraintTop_toBottomOf="@+id/cos_bt" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="162dp"
+        android:text="Result"
+
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqroot_bt" />
+
+    <EditText
+        android:id="@+id/number_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="numberSigned"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/sin_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
